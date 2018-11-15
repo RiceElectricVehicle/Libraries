@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -370,55 +370,61 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U$1" library="master_library" package="8-PIN-MOLEX" value="8-PIN-MOLEX-RA-FEMALE" x="91.44" y="67.31" rot="MR270"/>
-<element name="U$2" library="master_library" package="8-PIN-MOLEX" value="8-PIN-MOLEX-RA-FEMALE" x="31.75" y="67.31" rot="R270"/>
-<element name="U$3" library="master_library" package="8-PIN-MOLEX" value="8-PIN-MOLEX-RA-FEMALE" x="47.224134375" y="21.35574375"/>
+<element name="OUTPUT" library="master_library" package="8-PIN-MOLEX" value="8-PIN-MOLEX-RA-FEMALE" x="91.44" y="67.31" smashed="yes" rot="MR270">
+<attribute name="NAME" x="83.080334375" y="55.148" size="1.27" layer="26" rot="MR270"/>
+</element>
+<element name="INPUT" library="master_library" package="8-PIN-MOLEX" value="8-PIN-MOLEX-RA-FEMALE" x="31.75" y="67.31" smashed="yes" rot="R270">
+<attribute name="NAME" x="40.109665625" y="55.148" size="1.27" layer="25" rot="R270"/>
+</element>
+<element name="OUTPUT_COMPONENTS" library="master_library" package="8-PIN-MOLEX" value="8-PIN-MOLEX-RA-FEMALE" x="47.224134375" y="21.35574375" smashed="yes">
+<attribute name="NAME" x="59.386134375" y="29.715409375" size="1.27" layer="25"/>
+</element>
 </elements>
 <signals>
-<signal name="N$1">
-<contactref element="U$1" pad="P1"/>
-<contactref element="U$2" pad="P1"/>
-<contactref element="U$3" pad="P1"/>
+<signal name="BREAK_SIG">
+<contactref element="OUTPUT" pad="P1"/>
+<contactref element="INPUT" pad="P1"/>
+<contactref element="OUTPUT_COMPONENTS" pad="P1"/>
 <wire x1="49.53" y1="65.062" x2="78.28" y2="65.062" width="0.508" layer="1"/>
 <wire x1="44.91" y1="65.062" x2="49.53" y2="65.062" width="0.508" layer="1"/>
 <via x="49.53" y="65.062" extent="1-16" drill="0.35"/>
 <wire x1="49.53" y1="65.062" x2="49.53" y2="34.573609375" width="0.508" layer="16"/>
 <wire x1="49.53" y1="34.573609375" x2="49.472134375" y2="34.51574375" width="0.508" layer="16"/>
 </signal>
-<signal name="N$2">
-<contactref element="U$1" pad="P2"/>
-<contactref element="U$2" pad="P2"/>
-<contactref element="U$3" pad="P2"/>
+<signal name="HAZ_L_SIG">
+<contactref element="OUTPUT" pad="P2"/>
+<contactref element="INPUT" pad="P2"/>
+<contactref element="OUTPUT_COMPONENTS" pad="P2"/>
 <wire x1="53.031821875" y1="61.562" x2="78.28" y2="61.562" width="0.508" layer="1"/>
 <wire x1="44.91" y1="61.562" x2="53.031821875" y2="61.562" width="0.508" layer="1"/>
 <via x="53.031821875" y="61.562" extent="1-16" drill="0.35"/>
 <wire x1="53.031821875" y1="61.562" x2="53.031821875" y2="34.57543125" width="0.508" layer="16"/>
 <wire x1="53.031821875" y1="34.57543125" x2="52.972134375" y2="34.51574375" width="0.508" layer="16"/>
 </signal>
-<signal name="N$3">
-<contactref element="U$1" pad="P3"/>
-<contactref element="U$2" pad="P3"/>
-<contactref element="U$3" pad="P3"/>
+<signal name="HAZ_R_SIG">
+<contactref element="OUTPUT" pad="P3"/>
+<contactref element="INPUT" pad="P3"/>
+<contactref element="OUTPUT_COMPONENTS" pad="P3"/>
 <wire x1="56.543865625" y1="58.062" x2="78.28" y2="58.062" width="0.508" layer="1"/>
 <wire x1="44.91" y1="58.062" x2="56.543865625" y2="58.062" width="0.508" layer="1"/>
 <via x="56.543865625" y="58.062" extent="1-16" drill="0.35"/>
 <wire x1="56.543865625" y1="58.062" x2="56.543865625" y2="34.587475" width="0.508" layer="16"/>
 <wire x1="56.543865625" y1="34.587475" x2="56.472134375" y2="34.51574375" width="0.508" layer="16"/>
 </signal>
-<signal name="N$4">
-<contactref element="U$1" pad="P4"/>
-<contactref element="U$2" pad="P4"/>
-<contactref element="U$3" pad="P4"/>
+<signal name="HEADLIGHT_SIG">
+<contactref element="OUTPUT" pad="P4"/>
+<contactref element="INPUT" pad="P4"/>
+<contactref element="OUTPUT_COMPONENTS" pad="P4"/>
 <wire x1="59.9388375" y1="54.562" x2="78.28" y2="54.562" width="0.508" layer="1"/>
 <wire x1="44.91" y1="54.562" x2="59.9388375" y2="54.562" width="0.508" layer="1"/>
 <via x="59.9388375" y="54.562" extent="1-16" drill="0.35"/>
 <wire x1="59.9388375" y1="54.562" x2="59.9388375" y2="34.549040625" width="0.508" layer="16"/>
 <wire x1="59.9388375" y1="34.549040625" x2="59.972134375" y2="34.51574375" width="0.508" layer="16"/>
 </signal>
-<signal name="N$5">
-<contactref element="U$1" pad="P5"/>
-<contactref element="U$2" pad="P5"/>
-<contactref element="U$3" pad="P5"/>
+<signal name="REARLIGHT_SIG">
+<contactref element="OUTPUT" pad="P5"/>
+<contactref element="INPUT" pad="P5"/>
+<contactref element="OUTPUT_COMPONENTS" pad="P5"/>
 <wire x1="63.5" y1="51.062" x2="78.28" y2="51.062" width="0.508" layer="1"/>
 <wire x1="44.91" y1="51.062" x2="63.5" y2="51.062" width="0.508" layer="1"/>
 <via x="63.5" y="51.062" extent="1-16" drill="0.35"/>
@@ -426,9 +432,9 @@ design rules under a new name.</description>
 <wire x1="63.5" y1="34.543609375" x2="63.472134375" y2="34.51574375" width="0.508" layer="16"/>
 </signal>
 <signal name="N$6">
-<contactref element="U$1" pad="P6"/>
-<contactref element="U$2" pad="P6"/>
-<contactref element="U$3" pad="P6"/>
+<contactref element="OUTPUT" pad="P6"/>
+<contactref element="INPUT" pad="P6"/>
+<contactref element="OUTPUT_COMPONENTS" pad="P6"/>
 <wire x1="66.962921875" y1="47.562" x2="78.28" y2="47.562" width="0.508" layer="1"/>
 <wire x1="44.91" y1="47.562" x2="66.962921875" y2="47.562" width="0.508" layer="1"/>
 <via x="66.962921875" y="47.562" extent="1-16" drill="0.35"/>
@@ -436,19 +442,19 @@ design rules under a new name.</description>
 <wire x1="66.962921875" y1="34.52495625" x2="66.972134375" y2="34.51574375" width="0.508" layer="16"/>
 </signal>
 <signal name="N$7">
-<contactref element="U$1" pad="P7"/>
-<contactref element="U$2" pad="P7"/>
-<contactref element="U$3" pad="P7"/>
+<contactref element="OUTPUT" pad="P7"/>
+<contactref element="INPUT" pad="P7"/>
+<contactref element="OUTPUT_COMPONENTS" pad="P7"/>
 <wire x1="70.59203125" y1="44.062" x2="78.28" y2="44.062" width="0.508" layer="1"/>
 <wire x1="44.91" y1="44.062" x2="70.59203125" y2="44.062" width="0.508" layer="1"/>
 <via x="70.59203125" y="44.062" extent="1-16" drill="0.35"/>
 <wire x1="70.59203125" y1="44.062" x2="70.59203125" y2="34.635640625" width="0.508" layer="16"/>
 <wire x1="70.59203125" y1="34.635640625" x2="70.472134375" y2="34.51574375" width="0.508" layer="16"/>
 </signal>
-<signal name="N$8">
-<contactref element="U$1" pad="P8"/>
-<contactref element="U$2" pad="P8"/>
-<contactref element="U$3" pad="P8"/>
+<signal name="GND">
+<contactref element="OUTPUT" pad="P8"/>
+<contactref element="INPUT" pad="P8"/>
+<contactref element="OUTPUT_COMPONENTS" pad="P8"/>
 <wire x1="73.987003125" y1="40.562" x2="78.28" y2="40.562" width="0.508" layer="1"/>
 <wire x1="44.91" y1="40.562" x2="73.987003125" y2="40.562" width="0.508" layer="1"/>
 <via x="73.987003125" y="40.562" extent="1-16" drill="0.35"/>

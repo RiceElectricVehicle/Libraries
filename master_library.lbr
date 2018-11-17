@@ -9119,7 +9119,16 @@ Changed DIP package to have round (not oval) pin pads
 <connect gate="G$1" pin="P$8" pad="P8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="P1NAME" value="" constant="no"/>
+<attribute name="P2NAME" value="" constant="no"/>
+<attribute name="P3NAME" value="" constant="no"/>
+<attribute name="P4NAME" value="" constant="no"/>
+<attribute name="P5NAME" value="" constant="no"/>
+<attribute name="P6NAME" value="" constant="no"/>
+<attribute name="P7NAME" value="" constant="no"/>
+<attribute name="P8NAME" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>

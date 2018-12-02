@@ -9202,6 +9202,27 @@ Changed DIP package to have round (not oval) pin pads
 </device>
 </devices>
 </deviceset>
+<deviceset name="SB50_BLOCK">
+<gates>
+<gate name="G$1" symbol="SB50_CONNECTOR_BLOCK" x="7.62" y="0"/>
+</gates>
+<devices>
+<device name="" package="SB50POWER_CLAW">
+<connects>
+<connect gate="G$1" pin="P$1" pad="NEG1"/>
+<connect gate="G$1" pin="P$2" pad="NEG2"/>
+<connect gate="G$1" pin="P$3" pad="NEG3"/>
+<connect gate="G$1" pin="P$4" pad="POS1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:2274131/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

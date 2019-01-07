@@ -4227,15 +4227,15 @@ Source: &lt;a href="http://www.recom-international.com/pdf/Innoline/R-78xx-1.0.p
 <wire x1="0" y1="15.66" x2="29" y2="15.66" width="0.15" layer="21"/>
 <wire x1="29" y1="15.66" x2="29" y2="0" width="0.15" layer="21"/>
 <wire x1="29" y1="0" x2="0" y2="0" width="0.15" layer="21"/>
-<pad name="P1" x="2.248" y="13.16" drill="0.6" shape="square"/>
-<pad name="P2" x="5.748" y="13.16" drill="0.6" shape="square"/>
-<pad name="P3" x="9.248" y="13.16" drill="0.6" shape="square"/>
-<pad name="P4" x="12.748" y="13.16" drill="0.6" shape="square"/>
-<pad name="P5" x="16.248" y="13.16" drill="0.6" shape="square"/>
-<pad name="P6" x="19.748" y="13.16" drill="0.6" shape="square"/>
-<pad name="P7" x="23.248" y="13.16" drill="0.6" shape="square"/>
-<pad name="P8" x="26.748" y="13.16" drill="0.6" shape="square"/>
-<text x="12.162" y="8.359665625" size="1.27" layer="25">&gt;NAME</text>
+<pad name="P1" x="2.248" y="13.16" drill="1.02" shape="square"/>
+<pad name="P2" x="5.748" y="13.16" drill="1.02" shape="square"/>
+<pad name="P3" x="9.248" y="13.16" drill="1.02" shape="square"/>
+<pad name="P4" x="12.748" y="13.16" drill="1.02" shape="square"/>
+<pad name="P5" x="16.248" y="13.16" drill="1.02" shape="square"/>
+<pad name="P6" x="19.748" y="13.16" drill="1.02" shape="square"/>
+<pad name="P7" x="23.248" y="13.16" drill="1.02" shape="square"/>
+<pad name="P8" x="26.748" y="13.16" drill="1.02" shape="square"/>
+<text x="10.892" y="24.869665625" size="1.27" layer="25">&gt;NAME</text>
 <hole x="4" y="5.25" drill="3.05"/>
 <hole x="25" y="5.25" drill="3.05"/>
 <text x="10.004" y="0.715" size="1.27" layer="21">PCB EDGE </text>
@@ -4262,6 +4262,29 @@ Source: &lt;a href="http://www.recom-international.com/pdf/Innoline/R-78xx-1.0.p
 <pad name="P$1" x="2.09" y="3.43" drill="2.1" diameter="1.4224"/>
 <pad name="P$2" x="6.35" y="3.44" drill="2.1" diameter="1.4224"/>
 <pad name="P$3" x="10.59" y="3.44" drill="2.1" diameter="1.4224"/>
+</package>
+<package name="SO-16NARROW">
+<smd name="P$1" x="0" y="5.35" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="P$2" x="1.27" y="5.35" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="P$3" x="2.54" y="5.35" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="P$4" x="3.81" y="5.35" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="P$5" x="5.08" y="5.35" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="P$6" x="6.35" y="5.35" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="P$7" x="7.62" y="5.35" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="P$8" x="8.89" y="5.35" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="P$9" x="0" y="-0.031" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="P$10" x="1.27" y="-0.031" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="P$11" x="2.54" y="-0.031" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="P$12" x="3.81" y="-0.031" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="P$13" x="5.08" y="-0.031" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="P$14" x="6.35" y="-0.031" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="P$15" x="7.62" y="-0.031" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="P$16" x="8.89" y="-0.031" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<wire x1="-0.508" y1="0.635" x2="9.492" y2="0.635" width="0.127" layer="21"/>
+<wire x1="9.492" y1="0.635" x2="9.492" y2="4.635" width="0.127" layer="21"/>
+<wire x1="9.492" y1="4.635" x2="-0.508" y2="4.635" width="0.127" layer="21"/>
+<wire x1="-0.508" y1="4.635" x2="-0.508" y2="0.635" width="0.127" layer="21"/>
+<text x="2" y="2" size="1.27" layer="21">L6390</text>
 </package>
 </packages>
 <packages3d>
@@ -6153,6 +6176,29 @@ Mating connector PHR-2 &lt;br&gt;</description>
 <text x="-14.478" y="-0.254" size="1.9304" layer="94">SB50</text>
 <pin name="P$3" x="-20.32" y="2.54" length="middle"/>
 <pin name="P$4" x="-20.32" y="-2.54" length="middle"/>
+</symbol>
+<symbol name="L6390NEW">
+<wire x1="-10.16" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="15.24" x2="10.16" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-25.4" x2="-10.16" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-25.4" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
+<pin name="1_/LIN" x="-10.16" y="12.7" length="middle" rot="R180"/>
+<pin name="2_OD/SD" x="-10.16" y="7.62" length="middle" rot="R180"/>
+<pin name="3_HIN" x="-10.16" y="2.54" length="middle" rot="R180"/>
+<pin name="4_VCC" x="-10.16" y="-2.54" length="middle" rot="R180"/>
+<pin name="5_DT" x="-10.16" y="-7.62" length="middle" rot="R180"/>
+<pin name="6_OP-" x="-10.16" y="-12.7" length="middle" rot="R180"/>
+<pin name="7_OPOUT" x="-10.16" y="-17.78" length="middle" rot="R180"/>
+<pin name="8_GND" x="-10.16" y="-22.86" length="middle" rot="R180"/>
+<pin name="9_OP+" x="10.16" y="-22.86" length="middle"/>
+<pin name="10_CP+" x="10.16" y="-17.78" length="middle"/>
+<pin name="11_LVG" x="10.16" y="-12.7" length="middle"/>
+<pin name="12_NC" x="10.16" y="-7.62" length="middle"/>
+<pin name="13_NC" x="10.16" y="-2.54" length="middle"/>
+<pin name="14_OUT" x="10.16" y="2.54" length="middle"/>
+<pin name="15_HVG" x="10.16" y="7.62" length="middle"/>
+<pin name="16_BOOT" x="10.16" y="12.7" length="middle"/>
+<text x="-3.556" y="-5.842" size="1.778" layer="94">L6390</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -9217,6 +9263,18 @@ Changed DIP package to have round (not oval) pin pads
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:2274131/1"/>
 </package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="L6390">
+<gates>
+<gate name="G$1" symbol="L6390NEW" x="7.62" y="-5.08"/>
+</gates>
+<devices>
+<device name="SO-16" package="SO-16NARROW">
 <technologies>
 <technology name=""/>
 </technologies>

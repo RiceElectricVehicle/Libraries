@@ -4263,29 +4263,6 @@ Source: &lt;a href="http://www.recom-international.com/pdf/Innoline/R-78xx-1.0.p
 <pad name="P$2" x="6.35" y="3.44" drill="2.1" diameter="1.4224"/>
 <pad name="P$3" x="10.59" y="3.44" drill="2.1" diameter="1.4224"/>
 </package>
-<package name="SO-16NARROW">
-<smd name="P$1" x="0" y="5.35" dx="1.25" dy="0.55" layer="1" rot="R90"/>
-<smd name="P$2" x="1.27" y="5.35" dx="1.25" dy="0.55" layer="1" rot="R90"/>
-<smd name="P$3" x="2.54" y="5.35" dx="1.25" dy="0.55" layer="1" rot="R90"/>
-<smd name="P$4" x="3.81" y="5.35" dx="1.25" dy="0.55" layer="1" rot="R90"/>
-<smd name="P$5" x="5.08" y="5.35" dx="1.25" dy="0.55" layer="1" rot="R90"/>
-<smd name="P$6" x="6.35" y="5.35" dx="1.25" dy="0.55" layer="1" rot="R90"/>
-<smd name="P$7" x="7.62" y="5.35" dx="1.25" dy="0.55" layer="1" rot="R90"/>
-<smd name="P$8" x="8.89" y="5.35" dx="1.25" dy="0.55" layer="1" rot="R90"/>
-<smd name="P$9" x="0" y="0.104890625" dx="1.25" dy="0.55" layer="1" rot="R90"/>
-<smd name="P$10" x="1.27" y="0.104890625" dx="1.25" dy="0.55" layer="1" rot="R90"/>
-<smd name="P$11" x="2.54" y="0.104890625" dx="1.25" dy="0.55" layer="1" rot="R90"/>
-<smd name="P$12" x="3.81" y="0.104890625" dx="1.25" dy="0.55" layer="1" rot="R90"/>
-<smd name="P$13" x="5.08" y="0.104890625" dx="1.25" dy="0.55" layer="1" rot="R90"/>
-<smd name="P$14" x="6.35" y="0.104890625" dx="1.25" dy="0.55" layer="1" rot="R90"/>
-<smd name="P$15" x="7.62" y="0.104890625" dx="1.25" dy="0.55" layer="1" rot="R90"/>
-<smd name="P$16" x="8.89" y="0.104890625" dx="1.25" dy="0.55" layer="1" rot="R90"/>
-<wire x1="-0.508" y1="0.635" x2="9.492" y2="0.635" width="0.127" layer="21"/>
-<wire x1="9.492" y1="0.635" x2="9.492" y2="4.635" width="0.127" layer="21"/>
-<wire x1="9.492" y1="4.635" x2="-0.508" y2="4.635" width="0.127" layer="21"/>
-<wire x1="-0.508" y1="4.635" x2="-0.508" y2="0.635" width="0.127" layer="21"/>
-<text x="2" y="2" size="1.27" layer="21">L6390</text>
-</package>
 </packages>
 <packages3d>
 <package3d name="SB50POWER_CLAW" urn="urn:adsk.eagle:package:2274131/1" type="box">

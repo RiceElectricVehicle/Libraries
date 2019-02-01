@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -4262,6 +4262,30 @@ Source: &lt;a href="http://www.recom-international.com/pdf/Innoline/R-78xx-1.0.p
 <pad name="P$1" x="2.09" y="3.43" drill="2.1" diameter="1.4224"/>
 <pad name="P$2" x="6.35" y="3.44" drill="2.1" diameter="1.4224"/>
 <pad name="P$3" x="10.59" y="3.44" drill="2.1" diameter="1.4224"/>
+</package>
+<package name="SO-16NARROW">
+<smd name="P$1" x="0" y="0" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="P$2" x="1.27" y="0" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="P$3" x="2.54" y="0" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="P$4" x="3.81" y="0" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="P$5" x="5.08" y="0" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="P$6" x="6.35" y="0" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="P$7" x="7.62" y="0" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="P$8" x="8.89" y="0" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="P$9" x="0" y="5.35" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="P$10" x="1.27" y="5.35" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="P$11" x="2.54" y="5.35" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="P$12" x="3.81" y="5.35" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="P$13" x="5.08" y="5.35" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="P$14" x="6.35" y="5.35" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="P$15" x="7.62" y="5.35" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="P$16" x="8.89" y="5.35" dx="1.25" dy="0.55" layer="1" rot="R90"/>
+<wire x1="-0.6" y1="0.7" x2="9.4" y2="0.7" width="0.127" layer="21"/>
+<wire x1="9.4" y1="0.7" x2="9.5" y2="0.7" width="0.127" layer="21"/>
+<wire x1="9.5" y1="0.7" x2="9.5" y2="4.7" width="0.127" layer="21"/>
+<wire x1="9.5" y1="4.7" x2="-0.6" y2="4.7" width="0.127" layer="21"/>
+<wire x1="-0.6" y1="4.7" x2="-0.6" y2="0.7" width="0.127" layer="21"/>
+<text x="1.8" y="2.1" size="1.27" layer="21">L6390</text>
 </package>
 </packages>
 <packages3d>

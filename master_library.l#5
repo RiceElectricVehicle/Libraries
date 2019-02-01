@@ -9275,6 +9275,24 @@ Changed DIP package to have round (not oval) pin pads
 </gates>
 <devices>
 <device name="SO-16" package="SO-16NARROW">
+<connects>
+<connect gate="G$1" pin="10_CP+" pad="P$10"/>
+<connect gate="G$1" pin="11_LVG" pad="P$11"/>
+<connect gate="G$1" pin="12_NC" pad="P$12"/>
+<connect gate="G$1" pin="13_NC" pad="P$13"/>
+<connect gate="G$1" pin="14_OUT" pad="P$14"/>
+<connect gate="G$1" pin="15_HVG" pad="P$15"/>
+<connect gate="G$1" pin="16_BOOT" pad="P$16"/>
+<connect gate="G$1" pin="1_/LIN" pad="P$1"/>
+<connect gate="G$1" pin="2_OD/SD" pad="P$2"/>
+<connect gate="G$1" pin="3_HIN" pad="P$3"/>
+<connect gate="G$1" pin="4_VCC" pad="P$4"/>
+<connect gate="G$1" pin="5_DT" pad="P$5"/>
+<connect gate="G$1" pin="6_OP-" pad="P$6"/>
+<connect gate="G$1" pin="7_OPOUT" pad="P$7"/>
+<connect gate="G$1" pin="8_GND" pad="P$8"/>
+<connect gate="G$1" pin="9_OP+" pad="P$9"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>

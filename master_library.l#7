@@ -4309,6 +4309,13 @@ Source: &lt;a href="http://www.recom-international.com/pdf/Innoline/R-78xx-1.0.p
 <package name="SMT-TESTLOOP">
 <smd name="P$1" x="0" y="0" dx="1.8" dy="1" layer="1"/>
 </package>
+<package name="JST-B05B-AUTO">
+<pad name="P$1" x="-2.54" y="0" drill="1.2" shape="square"/>
+<pad name="P$2" x="0" y="0" drill="1.2" shape="square"/>
+<pad name="P$3" x="2.54" y="0" drill="1.2" shape="square"/>
+<pad name="P$4" x="5.08" y="0" drill="1.2" shape="square"/>
+<pad name="P$5" x="7.62" y="0" drill="1.2" shape="square"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SB50POWER_CLAW" urn="urn:adsk.eagle:package:2274131/1" type="box">

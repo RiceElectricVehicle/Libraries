@@ -4324,6 +4324,7 @@ Source: &lt;a href="http://www.recom-international.com/pdf/Innoline/R-78xx-1.0.p
 <vertex x="7.62" y="-1.27"/>
 <vertex x="7.62" y="-2.54"/>
 </polygon>
+<wire x1="-7.62" y1="5.08" x2="12.7" y2="5.08" width="0.127" layer="21"/>
 </package>
 </packages>
 <packages3d>

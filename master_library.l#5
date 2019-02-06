@@ -4318,7 +4318,12 @@ Source: &lt;a href="http://www.recom-international.com/pdf/Innoline/R-78xx-1.0.p
 <wire x1="-7.62" y1="5.08" x2="-7.62" y2="-2.54" width="0.127" layer="21"/>
 <wire x1="-7.62" y1="-2.54" x2="12.7" y2="-2.54" width="0.127" layer="21"/>
 <wire x1="12.7" y1="-2.54" x2="12.7" y2="5.08" width="0.127" layer="21"/>
-<wire x1="12.7" y1="5.08" x2="-7.62" y2="5.08" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="-2.54" y="-2.54"/>
+<vertex x="-2.54" y="-1.27"/>
+<vertex x="7.62" y="-1.27"/>
+<vertex x="7.62" y="-2.54"/>
+</polygon>
 </package>
 </packages>
 <packages3d>

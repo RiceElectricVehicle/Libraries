@@ -4285,21 +4285,29 @@ Source: &lt;a href="http://www.recom-international.com/pdf/Innoline/R-78xx-1.0.p
 <wire x1="9.5" y1="0.7" x2="9.5" y2="4.7" width="0.127" layer="21"/>
 <wire x1="9.5" y1="4.7" x2="-0.6" y2="4.7" width="0.127" layer="21"/>
 <wire x1="-0.6" y1="4.7" x2="-0.6" y2="0.7" width="0.127" layer="21"/>
-<text x="1.8" y="2.1" size="1.27" layer="21">L6390</text>
+<text x="1.419" y="2.1" size="1.27" layer="25">&gt;Name</text>
 </package>
 <package name="MURATA_MC">
-<pad name="P$1" x="0" y="0" drill="1" shape="square"/>
-<pad name="P$2" x="22.86" y="0" drill="1" shape="square"/>
-<pad name="P$3" x="22.86" y="15.24" drill="1" shape="square"/>
-<pad name="P$4" x="17.78" y="15.24" drill="1" shape="square"/>
-<pad name="P$5" x="0" y="15.24" drill="1" shape="square"/>
-<pad name="P$6" x="2.54" y="15.24" drill="1" shape="square"/>
+<pad name="P$2" x="0" y="0" drill="1" shape="square"/>
+<pad name="P$11" x="22.86" y="0" drill="1" shape="square"/>
+<pad name="P$14" x="22.86" y="15.24" drill="1" shape="square"/>
+<pad name="P$16" x="17.78" y="15.24" drill="1" shape="square"/>
+<pad name="P$23" x="0" y="15.24" drill="1" shape="square"/>
+<pad name="P$22" x="2.54" y="15.24" drill="1" shape="square"/>
 <wire x1="0" y1="-2.54" x2="27.94" y2="-2.54" width="0.127" layer="21"/>
 <wire x1="27.94" y1="-2.54" x2="27.94" y2="17.78" width="0.127" layer="21"/>
 <wire x1="27.94" y1="17.78" x2="-5.08" y2="17.78" width="0.127" layer="21"/>
 <wire x1="-5.08" y1="17.78" x2="-5.08" y2="-2.54" width="0.127" layer="21"/>
 <wire x1="-5.08" y1="-2.54" x2="0" y2="-2.54" width="0.127" layer="21"/>
-<pad name="P$7" x="-2.54" y="0" drill="1" shape="square"/>
+<pad name="P$1" x="-2.54" y="0" drill="1" shape="square"/>
+<text x="7.62" y="7.62" size="1.27" layer="25">&gt;Name</text>
+</package>
+<package name="TESTLOOP">
+<pad name="P$1" x="0" y="0" drill="1.6" shape="square"/>
+<text x="-2.54" y="1.27" size="1.27" layer="25">&gt;Name</text>
+</package>
+<package name="SMT-TESTLOOP">
+<smd name="P$1" x="0" y="0" dx="1.8" dy="1" layer="1"/>
 </package>
 </packages>
 <packages3d>
@@ -5830,7 +5838,6 @@ Source: VISHAY wscwsn.pdf</description>
 <wire x1="0.508" y1="-5.715" x2="0.508" y2="-5.207" width="0.1524" layer="94"/>
 <pin name="TP" x="0" y="2.54" visible="off" length="short" direction="in" rot="R270"/>
 <text x="-1.016" y="-6.35" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="1.27" y="-2.54" size="1.778" layer="97">&gt;TP_SIGNAL_NAME</text>
 </symbol>
 <symbol name="C-US-1">
 <wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
@@ -5993,6 +6000,7 @@ Mating connector PHR-2 &lt;br&gt;</description>
 <pin name="16_BOOT" x="17.78" y="17.78" length="middle" rot="R180"/>
 <circle x="-10.16" y="20.32" radius="1.077628125" width="0.254" layer="94"/>
 <text x="-8.636" y="23.876" size="3.81" layer="94">L6390</text>
+<text x="-5.08" y="20.32" size="1.27" layer="95">&gt;Name</text>
 </symbol>
 <symbol name="C">
 <rectangle x1="-2.032" y1="-1.016" x2="2.032" y2="-0.508" layer="94"/>
@@ -6191,6 +6199,21 @@ Mating connector PHR-2 &lt;br&gt;</description>
 <text x="-14.478" y="-0.254" size="1.9304" layer="94">SB50</text>
 <pin name="P$3" x="-20.32" y="2.54" length="middle"/>
 <pin name="P$4" x="-20.32" y="-2.54" length="middle"/>
+</symbol>
+<symbol name="MURATA_MC">
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="15.24" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-12.7" x2="15.24" y2="7.62" width="0.254" layer="94"/>
+<wire x1="15.24" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<pin name="1_ON/OFF" x="-15.24" y="5.08" visible="pin" length="middle"/>
+<pin name="2_-VIN" x="-15.24" y="0" visible="pin" length="middle"/>
+<pin name="14_+VOUT" x="20.32" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="23_+VIN" x="-15.24" y="-10.16" visible="pin" length="middle"/>
+<pin name="22_+VIN" x="-15.24" y="-5.08" visible="pin" length="middle"/>
+<pin name="11_N/C" x="20.32" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="16_-VOUT" x="20.32" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<text x="-5.08" y="7.62" size="1.778" layer="95">&gt;Name</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -9251,6 +9274,50 @@ Changed DIP package to have round (not oval) pin pads
 <connect gate="G$1" pin="7_OPOUT" pad="P$7"/>
 <connect gate="G$1" pin="8_GND" pad="P$8"/>
 <connect gate="G$1" pin="9_OP+" pad="P$16"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NCM6S4815C">
+<gates>
+<gate name="MURATA" symbol="MURATA_MC" x="-2.54" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="MURATA_MC">
+<connects>
+<connect gate="MURATA" pin="11_N/C" pad="P$11"/>
+<connect gate="MURATA" pin="14_+VOUT" pad="P$14"/>
+<connect gate="MURATA" pin="16_-VOUT" pad="P$16"/>
+<connect gate="MURATA" pin="1_ON/OFF" pad="P$1"/>
+<connect gate="MURATA" pin="22_+VIN" pad="P$22"/>
+<connect gate="MURATA" pin="23_+VIN" pad="P$23"/>
+<connect gate="MURATA" pin="2_-VIN" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TEST_LOOP">
+<gates>
+<gate name="G$1" symbol="PS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="THT" package="TESTLOOP">
+<connects>
+<connect gate="G$1" pin="TP" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMT" package="SMT-TESTLOOP">
+<connects>
+<connect gate="G$1" pin="TP" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
